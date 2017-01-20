@@ -5,8 +5,8 @@ set_time_limit(4000);
  
 // Connect to gmail
 $imapPath = '{imap.gmail.com:993/imap/ssl}INBOX';
-$username = 'your_email_id@gmail.com';
-$password = 'your_gmail_password';
+$username = 'email_id@gmail.com';
+$password = 'gmail_password';
  
 // try to connect
 $inbox = imap_open($imapPath,$username,$password) or die('Cannot connect to Gmail: ' . imap_last_error());
