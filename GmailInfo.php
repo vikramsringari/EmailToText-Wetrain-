@@ -31,8 +31,6 @@ foreach($emails as $mail) {
     
     if(!isset($emailStructure->parts)) {
          $output .= imap_body($inbox, $mail, FT_PEEK);
-    } else {
-        //    
     }
    echo $output;
    $output = '';
